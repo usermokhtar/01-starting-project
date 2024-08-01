@@ -1,18 +1,10 @@
 import React from 'react';
+import { useState } from 'react';
 
-const TabButton = ({ label }) => {
-  let handelClick = () => {
-    console.log('Hello World!');
-  };
+const TabButton = ({ label, onSelect }) => {
   return (
     <li>
-      <button
-        onClick={() => {
-          handelClick();
-        }}
-      >
-        {label}
-      </button>
+      <button onClick={onSelect}>{label}</button>
     </li>
   );
 };
