@@ -10,7 +10,8 @@ const Header = () => {
   let startDescription = reactDescriptions[genRandomInt(2)];
   return (
     <div>
-      {/* Test Commit by adding a Comment */}
+      {/* Test Commit1 by adding a Comment */}
+      {/* Test Commit2 by adding a Comment */}
       <header>
         <img src={Img1} alt='Stylized atom' />
         <h1>React Essentials</h1>
