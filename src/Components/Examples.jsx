@@ -2,6 +2,7 @@ import React from 'react';
 import { EXAMPLES } from '../data.js';
 import TabButton from './TabButton.jsx';
 import { useState } from 'react';
+import Section from './Section.jsx';
 const Examples = () => {
   const [text, setText] = useState('components'); // Initialize state with a default value
 
@@ -10,8 +11,7 @@ const Examples = () => {
   };
   return (
     <div>
-      <section id='examples'>
-        <h2>Examples</h2>
+      <Section title='Examples' id='examples'>
         <menu>
           {Object.keys(EXAMPLES).map((example) => (
             <TabButton
@@ -31,7 +31,7 @@ const Examples = () => {
             {EXAMPLES[text]?.code && <h4>Code Example</h4>}
           </pre>
         </div>
-      </section>
+      </Section>
     </div>
   );
 };
